@@ -1,0 +1,14 @@
+<p style="color: red"><%= notice %></p>
+
+<h1 style="color: Green">My Friends</h1>
+
+<div id="friends">
+  <% @friends.each do |friend| %>
+    <h2><%= friend.first_name %></h2>
+    <p>
+      <%= link_to "Show this friend", friend , class:"btn btn-warning"%>
+    </p>
+  <% end %>
+</div>
+
+
