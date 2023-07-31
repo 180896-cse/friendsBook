@@ -18,6 +18,9 @@
   <body>
     <%= render "partials/navbar" %>
     <div class="container">
+    <% if notice %>
+      <%=render "partials/alert"%>
+    <%end%>
     <%= yield %>
     </div>
     
